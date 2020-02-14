@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaming macth</title>
 </head>
-<body>
-<nav>
+<body onhashchange="pageChange()">
+<nav id="tabbar" class="tabbar hide">
+<a href="#front"></a>
 <a href="#browse"> browse games</a>
 <a href="#profile"> profile</a>
+<a href="deetailedView"></a>
 </nav>
 <!-- forntpage -->
 <section id="front" class="page">
@@ -31,5 +33,6 @@
 <section id="profile" class="page">
 <h2>profile</h2>
 </section>
+<script src="js/spa.js"></script>
 </body>
 </html>
