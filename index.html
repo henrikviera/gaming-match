@@ -16,7 +16,14 @@
 <!-- forntpage -->
 <section id="front" class="page">
 <h2>frontpage</h2>
-
+<div id="add-acc">
+<form>
+<!-- <input type="text" id="name" placeholder="Type your name" required> -->
+<input type="email" id="mail" placeholder="Type your email" required>
+<input type="text" id="password" placeholder="Type your password" required>
+<button type="button" name="button" onclick="signUp()">signUp</button>
+</form>
+</div>
 </section>
 <!-- browse game page  -->
 <section id="browse" class="page">
@@ -34,6 +41,9 @@
 <section id="profile" class="page">
 <h2>profile</h2>
 </section>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+<script src="js/firebaseFunction.js"></script>
 <script src="js/spa.js"></script>
 <script src="js/main.js"></script>
 </body>
