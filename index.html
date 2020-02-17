@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaming match</title>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body onhashchange="pageChange()">
 
@@ -16,6 +18,13 @@
 <!-- forntpage -->
 <section id="front" class="page">
 <h2>frontpage</h2>
+<div id="background"></div>
+<section id="login">
+<input type="email" id="inMail" placeholder="type your email">
+<input type="text" id="inPassword" placeholder="type your password">
+<button type="button" name="button" onclick="signIn()">sign in</button>
+</section>
+<button type="button" name="button" onclick="showSignUp()">sign up</button>
 <div id="add-acc">
 <form>
 <!-- <input type="text" id="name" placeholder="Type your name" required> -->
@@ -24,12 +33,12 @@
 <button type="button" name="button" onclick="signUp()">signUp</button>
 </form>
 </div>
+
 </section>
 <!-- browse game page  -->
 <section id="browse" class="page">
 <h2>browse games</h2>
-    <div id="background"></div>
-    <section id="login"></section>
+
 </section>
 <!-- game detailed view page -->
 <section id="detailedView" class="page">
@@ -41,8 +50,12 @@
 <section id="profile" class="page">
 <h2>profile</h2>
 </section>
+<!-- firebase scripts -->
 <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<!-- my scripts -->
 <script src="js/firebaseFunction.js"></script>
 <script src="js/spa.js"></script>
 <script src="js/main.js"></script>
