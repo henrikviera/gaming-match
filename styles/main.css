@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,3 +27,9 @@ body {
     background-color: #4CAF50;
     color: white;
   }
+=======
+#add-acc{
+display: none;
+}
+/* ------------firebase login ui-------------- */
+>>>>>>> 87e3de0ef7cab5fafd4f553e84e94a5627dbf64a
